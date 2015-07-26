@@ -47,6 +47,7 @@ class LessonViewController: UIViewController {
         // Do any additional setup after loading the view.
         //test1
         //test2-1
+        //test3
         //戻るボタンを常に"Back”表示
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .Plain, target: nil, action: nil)
 
