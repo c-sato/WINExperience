@@ -14,6 +14,10 @@
 		293E82CE1AA6127A00885BB1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293E82CD1AA6127A00885BB1 /* Images.xcassets */; };
 		293E82D11AA6127A00885BB1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293E82CF1AA6127A00885BB1 /* LaunchScreen.xib */; };
 		293E82DD1AA6127A00885BB1 /* WINExperienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E82DC1AA6127A00885BB1 /* WINExperienceTests.swift */; };
+		293E82E71AA6130A00885BB1 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E82E61AA6130A00885BB1 /* LessonViewController.swift */; };
+		293E82E91AA6135500885BB1 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293E82E81AA6135500885BB1 /* ListTableViewController.swift */; };
+		29A01F8D1B5D003400E8C33F /* QuestionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29A01F8C1B5D003400E8C33F /* QuestionList.plist */; };
+		29BF45831AD3605700998E9D /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BF45821AD3605700998E9D /* TopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		293E82D61AA6127A00885BB1 /* WINExperienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WINExperienceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		293E82DB1AA6127A00885BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		293E82DC1AA6127A00885BB1 /* WINExperienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WINExperienceTests.swift; sourceTree = "<group>"; };
+		293E82E61AA6130A00885BB1 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
+		293E82E81AA6135500885BB1 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		29A01F8C1B5D003400E8C33F /* QuestionList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = QuestionList.plist; sourceTree = "<group>"; };
+		29BF45821AD3605700998E9D /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,10 @@
 				293E82CF1AA6127A00885BB1 /* LaunchScreen.xib */,
 				293E82C51AA6127A00885BB1 /* WINExperience.xcdatamodeld */,
 				293E82C11AA6127A00885BB1 /* Supporting Files */,
+				293E82E61AA6130A00885BB1 /* LessonViewController.swift */,
+				293E82E81AA6135500885BB1 /* ListTableViewController.swift */,
+				29BF45821AD3605700998E9D /* TopViewController.swift */,
+				29A01F8C1B5D003400E8C33F /* QuestionList.plist */,
 			);
 			path = WINExperience;
 			sourceTree = "<group>";
@@ -195,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A01F8D1B5D003400E8C33F /* QuestionList.plist in Resources */,
 				293E82CC1AA6127A00885BB1 /* Main.storyboard in Resources */,
 				293E82D11AA6127A00885BB1 /* LaunchScreen.xib in Resources */,
 				293E82CE1AA6127A00885BB1 /* Images.xcassets in Resources */,
@@ -215,8 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BF45831AD3605700998E9D /* TopViewController.swift in Sources */,
+				293E82E71AA6130A00885BB1 /* LessonViewController.swift in Sources */,
 				293E82C91AA6127A00885BB1 /* ViewController.swift in Sources */,
 				293E82C71AA6127A00885BB1 /* WINExperience.xcdatamodeld in Sources */,
+				293E82E91AA6135500885BB1 /* ListTableViewController.swift in Sources */,
 				293E82C41AA6127A00885BB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +358,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Satoshi Suzuki (D4MG5TA46R)";
 				INFOPLIST_FILE = WINExperience/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3fc71f76-d936-4466-8715-bde0551422d9";
 			};
 			name = Debug;
 		};
@@ -352,9 +371,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Satoshi Suzuki (D4MG5TA46R)";
 				INFOPLIST_FILE = WINExperience/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3fc71f76-d936-4466-8715-bde0551422d9";
 			};
 			name = Release;
 		};
@@ -411,6 +433,7 @@
 				293E82E21AA6127A00885BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		293E82E31AA6127A00885BB1 /* Build configuration list for PBXNativeTarget "WINExperienceTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +442,7 @@
 				293E82E51AA6127A00885BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
